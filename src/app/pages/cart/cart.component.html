@@ -1,0 +1,66 @@
+
+<!-- adding navbar -->
+<app-navigation></app-navigation>
+
+<!-- ng container directive for making container -->
+<ng-container *ngIf="products.length > 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="card-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- this part is render dynamic based on the selected backed items -->
+            <tr *ngFor="let item of products, let i = index">
+              <td>{{i + 1}}</td>
+              <td><img src="{{item.productSmallImage}}" alt="product image" style="width: 120px;"></td>
+              <td>{{item.productTitle}}</td>
+              <td>{{item.productDescription}}</td>
+              <td>${{item.productPrice}}</td>
+              <td><button (click)="removeProduct(item)" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+              </svg></button></td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td><button (click)="removeAllProducts()" class="btn btn-danger">Empty Cart</button></td>
+              <td><button routerLink="/products" class="btn btn-secondary">Shop More</button></td>
+              <td><button (click)="removeAllProducts()" routerLink="/checkout" class="btn btn-secondary">Check out</button></td>
+              <td><strong>Total: ${{allProducts}}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+
+<!-- statically rendering part -->
+<ng-container *ngIf="products.length < 1">
+  <div class="container">
+    <div class="card">
+      <h4 class="card-title">My Cart</h4>
+    </div>
+    <div class="center">
+      <img  src="../../../assets/empty-cart.png" alt="empty cart">
+      <h5 class="text-secondary">Your Cart is Empty!</h5>
+      <h6 class="text-secondary">Buy Games Now!</h6>
+      <button routerLink="/products" class="btn btn-secondary">Shop Now</button>
+    </div>
+  </div>
+</ng-container>
+
+
+
+<!-- adding footer at the end -->
+<app-footer></app-footer>

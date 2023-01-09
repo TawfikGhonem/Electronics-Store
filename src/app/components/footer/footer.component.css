@@ -1,0 +1,6 @@
+/* footer styling + fixing to bottom */
+footer {
+    position: sticky;
+    top: 100%;
+}
+

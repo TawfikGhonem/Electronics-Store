@@ -1,0 +1,90 @@
+[
+  {
+    "productId": 1,
+    "productCode": "101",
+    "productName": "Phones",
+    "productTitle": "Iphone 8",
+    "productSubTitle": "I Phone 8",
+    "productPlatform": "Electronics Mall",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/product1.jpg",
+    "productPrice": 32.83
+  },
+  {
+    "productId": 2,
+    "productCode": "102",
+    "productName": "Phones",
+    "productTitle": "I Phone 9",
+    "productSubTitle": "I Phone 9",
+    "productPlatform": "Steam",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/product2.jpeg",
+    "productPrice": 19.99
+  },
+  {
+    "productId": 3,
+    "productCode": "103",
+    "productName": "Phones",
+    "productTitle": "I phone 10",
+    "productSubTitle": "I Phone 10",
+    "productPlatform": "Org",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/product3.jpg",
+    "productPrice": 26.00
+  },
+  {
+    "productId": 4,
+    "productCode": "104",
+    "productName": "Phones",
+    "productTitle": "I Phone 11",
+    "productSubTitle": "I Phone 11",
+    "productPlatform": "Our Store",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/product4.jpg",
+    "productPrice": 25.00
+  },
+  {
+    "productId": 5,
+    "productCode": "105",
+    "productName": "Phones",
+    "productTitle": "I Phone 12",
+    "productSubTitle": "I Phone 12",
+    "productPlatform": "Steam",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/product5.jpg",
+    "productPrice": 25.00
+  },
+  {
+    "productId": 6,
+    "productCode": "106",
+    "productName": "Product",
+    "productTitle": "Watches",
+    "productSubTitle": "Watches",
+    "productPlatform": "Steam",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/small1.jpg",
+    "productPrice": 25.00
+  },
+  {
+    "productId": 7,
+    "productCode": "107",
+    "productName": "Product",
+    "productTitle": "Laptops",
+    "productSubTitle": "Laptops",
+    "productPlatform": "Steam",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/small2.jpg",
+    "productPrice": 25.00
+  },
+  {
+    "productId": 8,
+    "productCode": "108",
+    "productName": "Product",
+    "productTitle": "Phones",
+    "productSubTitle": "Phones",
+    "productPlatform": "EC Mall",
+    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam mi, scelerisque pulvinar finibus ut, malesuada at sapien. Proin lobortis magna ut orci rhoncus, non consectetur enim sollicitudin. Nam quis.",
+    "productSmallImage": "./assets/small3.jpg",
+    "productPrice": 25.00
+  }
+]

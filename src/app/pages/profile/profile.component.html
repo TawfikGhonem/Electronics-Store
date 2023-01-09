@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+
+<div class="container text-center ">
+            <div class="user">
+                <div class="image mt-3 mx-auto">
+                    <img src="../../../assets/profile.png" alt="profile" >
+                </div>
+               <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group p-5 list-group-flush class">
+                        <div *ngIf="loggedIn()" class="list-group-item text-danger"><h3>Name: {{loggedInUser}}</h3></div>
+                        <div class="list-group-item text-danger"><h4>Email: {{emailOfUser}}</h4></div>
+                    </div>
+                </div>
+               </div>
+            </div>
+          </div>
+
+<app-footer></app-footer>

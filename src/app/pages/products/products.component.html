@@ -1,0 +1,32 @@
+
+
+<!-- adding nav bar at the top -->
+<app-navigation></app-navigation>
+
+
+<!-- this sectin show the data that it fetch form the backend -->
+<div class="container">
+  <div class="products-container">
+      <h1 class="pt-3 text-secondary fs-1">Products</h1>
+      <div class="product-grid">
+          <div class="row mb-4 gy-4 justify-content-center">
+              <div *ngFor="let item of Product" class="product-square">
+                  <div class="card" style="width: 18rem;">
+                    <!-- fetching the specific data of the product based on selected items -->
+                      <img class="card-img-top" [src]="item.productSmallImage" />
+                      <div class="card-body">
+                          <h5 class="card-title">This is gonna show</h5>
+                          <p>{{ item.productDescription }}</p>
+                          <p> ${{item.productPrice}} <span>USD</span> </p>
+                          <a (click)="addtoCart(item)" class="btn btn-primary">Buy</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- adding footer -->
+<app-footer></app-footer>

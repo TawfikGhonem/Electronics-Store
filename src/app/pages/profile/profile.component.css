@@ -1,0 +1,14 @@
+div img {
+  width: 200px;
+  height: auto;
+  border-radius: 60px;
+  margin-top: 50px;
+}
+
+div .list-group {
+border-color: aliceblue;
+}
+
+div .list-group-item {
+  border-color: white;
+}

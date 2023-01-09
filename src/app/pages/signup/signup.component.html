@@ -1,0 +1,30 @@
+<app-navigation></app-navigation>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="registrationForm" class="d-flex justify-centent-center align-items-center flex-column">
+  <div class="m-4 text-danger w-50">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <span *ngIf="!email.valid && (email.touched || userSubmitted)">
+      Please provide a valid email address.
+    </span>
+  </div>
+  <div class="m-4 text-danger w-50">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+    <span *ngIf="!password.valid && (password.touched || userSubmitted)">
+      Please provide a password.
+    </span>
+  </div>
+  <div class="m-4 text-danger w-50">
+    <label for="exampleInputUsername1" class="form-label">Username</label>
+    <input formControlName="userName" type="text" class="form-control" id="exampleInputUsername1">
+    <span *ngIf="!userName.valid && (userName.touched || userSubmitted)">
+      Please provide a username.
+    </span>
+  </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <button type="submit" class="btn btn-danger mb-4 ms-4">Submit</button>
+  </div>
+</form>
+
+<app-footer></app-footer>

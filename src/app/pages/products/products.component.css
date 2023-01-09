@@ -1,0 +1,36 @@
+.product-grid {
+  display: flex;
+}
+
+.product-square {
+  width: auto;
+}
+
+.card-img-top {
+  height: 175px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+p {
+  font-weight: 600;
+  color: black;
+  display: flex;
+}
+
+span {
+  color: gray;
+  padding-left: 10px;
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  align-self: center;
+}
